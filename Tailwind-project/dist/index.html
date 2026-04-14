@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../src/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Tailwind-Project</title>
+</head>
+
+<body class="scroll-smooth">
+    <!-- staart the site with the nav ber -->
+    <nav class="z-10  w-full fixed bg-white  sm:bg-white/90">
+
+        <div class="navigation  flex justify-between relative p-0 sm:px-5 sm:pt-2 border-gray-300 border-b ">
+
+            <!-- left side cotains logo  -->
+            <div class="left flex items-center gap-10">
+                <!-- logo div -->
+                <div class="logo flex cursor-pointer gap-3 items-center">
+                    <img class="w-10 rounded-xl" src="../img/logo.jpg" alt="">
+                    <h3 class=" hidden sm:block font-bold text-2xl">Dropbox</h3>
+                </div>
+
+                <!-- the list of bar -->
+                <ul class="hidden xl:flex justify-between items-center gap-7">
+                    <li
+                        class="group hover:text-blue-600 transition ease-in duration-300 font-semibold text-1xl py-3 px-3 cursor-pointer  ">
+                        <a href="#"> Products <i class="text-sm fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-1 Dropone z-10 ">
+
+                            <ul class="relative grid grid-cols-2 grid-rows-4 w-fit ml-45">
+
+                                <li class="productList group/item">
+
+                                    <img src="../img/Dropbox-logo-nav.svg" alt="">
+
+                                    <div class="text">
+
+                                        <h5
+                                            class=" group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black">
+                                            Dropbox</h5>
+
+                                        <p class="relative w-3/5 text-sm text-gray-500">Store, share, and access
+                                            files across devices</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img src="../img/dash-logo-nav.svg" alt="">
+                                    <div class="text">
+
+                                        <h5
+                                            class="group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black">
+                                            Replay</h5>
+                                        <p class="relative w-6/10 text-sm text-gray-500">Review and approve videos
+                                            faste</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img src="../img/dropbox-sign-logo.svg" alt="">
+                                    <div class="text">
+
+                                        <h5
+                                            class="group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black ">
+                                            Sign</h5>
+                                        <p class="relative w-6/10 text-sm text-gray-500">Request and add signatures
+                                            to documents</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img class="w-9" src="../img/reclaim-dbx-waffle-32x32.svg" alt="">
+                                    <div class="text items-start">
+
+                                        <h5
+                                            class="group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black ">
+                                            Reclaim.ai</h5>
+                                        <p class="relative w-6/10 text-sm text-gray-500">Schedule habits, tasks, and
+                                            meetings with A</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img src="../img/dash-logo-nav.svg" alt="">
+                                    <div class="text">
+
+                                        <h5
+                                            class="group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black">
+                                            Dash</h5>
+                                        <p class="relative w-6/10 text-sm text-gray-500">Find, organize, and protect
+                                            company content</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img src="../img/DocSend-logo-nav.svg" alt="">
+                                    <div class="text">
+
+                                        <h5
+                                            class="group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black ">
+                                            DocSend</h5>
+                                        <p class="relative w-6/10 text-sm text-gray-500">Send documents securely
+                                            and track activity</p>
+                                    </div>
+                                </li>
+                                <li class="productList group/item">
+                                    <img src="../img/arrow_right.svg" alt="">
+                                    <div class="text">
+
+                                        <h5
+                                            class=" group-hover/item:text-blue-600 transition duration-300 ease-in font-semibold text-black ">
+                                            Early access</h5>
+                                        <p class="relative  text-sm text-gray-500">Preview new product
+                                            experiences</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li
+                        class="group hover:text-blue-600 transition ease-in duration-300 font-semibold text-1xl py-3 px-3 cursor-pointer  ">
+                        Solutions <i class="text-sm fa-solid fa-angle-down"></i>
+                        <div class="dropdown-2 Droptwo z-10 ">
+                            <div class="container relative justify-between w-[40%] left-[23%] flex ">
+                                <div class="teams w-full mr-5">
+                                    <h5 class="text-gray-500 mb-3 font-semibold px-3">Teams</h5>
+                                    <ul>
+                                        <li class="solutionList">
+                                            Sales</li>
+                                        <li class="solutionList">
+                                            Marketing</li>
+                                        <li class="solutionList">
+                                            HR</li>
+                                        <li class="solutionList">
+                                            IT</li>
+                                        <li class="solutionList">
+                                            Creatives</li>
+                                    </ul>
+                                </div>
+                                <div class="usecas w-full mr-5">
+                                    <h5 class="text-gray-500 mb-3 font-semibold px-3">Use Cases</h5>
+                                    <ul>
+                                        <li class="solutionList">
+                                            Cloud storage</li>
+                                        <li class="solutionList">
+                                            Send large files</li>
+                                        <li class="solutionList">
+                                            Video review</li>
+                                        <li class="solutionList">
+                                            Signing documents</li>
+                                        <li class="solutionList">
+                                            Sharing files</li>
+                                    </ul>
+                                </div>
+                                <div class="industries w-full mr-5">
+                                    <h5 class="text-gray-500 mb-3 font-semibold px-3">Industries</h5>
+                                    <ul>
+                                        <li class="solutionList">
+                                            Construcions</li>
+                                        <li class="solutionList">
+                                            Technology</li>
+                                        <li class="solutionList">
+                                            Manufactoring</li>
+                                        <li class="solutionList">
+                                            Media</li>
+                                        <li class="solutionList">
+                                            Professional servise</li>
+                                        <li class="solutionList">
+                                            Education</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li
+                        class="hover:text-blue-600 traonsition ease-in duration-300 cursor-pointer font-semibold text-1xl">
+                        Enterprise</li>
+                    <li
+                        class="hover:text-blue-600 traonsition ease-in duration-300 cursor-pointer font-semibold text-1xl">
+                        Pricing</li>
+                </ul>
+            </div>
+
+            <!-- right side contains the rest of settings -->
+            <div class="right flex justify-between gap-5 font-light sm:font-semibold items-center">
+                <!-- mode div -->
+                <div class="mode border-2 border-gray-500  rounded-2xl">
+                    <i class="mr-0.5 hover:bg-gray-400/50 active p-1.5 rounded-xl fa-regular fa-moon"></i>
+                    <i class="ml-0.5 hover:bg-gray-400/50 p-1.5 rounded-xl fa-regular fa-sun"></i>
+                </div>
+                <div
+                    class="contact hover:text-blue-600 traonsition ease-in hidden sm:block  duration-300 cursor-pointer">
+                    Contact sales
+                </div>
+                <div class="singup hover:text-blue-600 traonsition ease-in duration-300 cursor-pointer">Sign up</div>
+                <div class="login hover:text-blue-600 traonsition ease-in duration-300 cursor-pointer">Log in</div>
+                <button
+                    class="hidden md:block text-xl bg-blue-600 py-2 px-3 mb-1.5 rounded-xl text-white font-semibold hover:bg-blue-800 cursor-pointer transition ease-in duration-200">Get
+                    started</button>
+                <div class="shortcut block xl:hidden font-bold md:text-2xl cursor-pointer pr-1.5 ">☰</div>
+            </div>
+        </div>
+    </nav>
+    <!-- End  nav  Bar -->
+    <!-- ================================================================================================================ -->
+    <!-- Hero section -->
+    <section class="section1 w-full lg:pt-15 pt-25 pb-15 bg-[#f7f5f2] pl-3 ">
+        <div class="hero block  relative lg:flex w-[95%] xl:w-6/7 mx-auto items-center">
+            <div class="parg">
+                <h1 class="z-0 font-semibold w-full  lg:w-[75%] mb-6 text-3xl sm:text-5xl relative">Get to work, with a
+                    lot less
+                    work</h1>
+                <p class=" text-[19px] sm:text-2xl w-[95%] text-gray-500 sm:w-5/6  mb-6">Dropbox delivers tools
+                    that help you collaborate with ease,
+                    move work forward faster, and keep it all
+                    safe.</p>
+                <button class="transition ease-in duration-300 group 
+                 hover:bg-blue-700 px-5 py-6 cursor-pointer 
+                  bg-blue-500 text-white text-xl font-semibold rounded-xl ">
+                    Try Dropbox free
+                    <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-5 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="image w-full "><img class="w-full object-cover" src="../img/desktop-mobile-fss-1440x1440.webp"
+                    alt="">
+            </div>
+        </div>
+        <h1 class="relative mx-auto w-full text-xl font-semibold pb-15 text-center">Join the over 700 million registered
+            users who trust Dropbox</h1>
+
+        <div class="slider w-full relative overflow-hidden ">
+            <div class=" items-center animate-move flex gap-25 w-max pb-5">
+
+                <img src="../img/Crunch.svg" alt="">
+                <img src="../img/Cirque.svg" alt="">
+                <img src="../img/Hydro.svg" alt="">
+                <img src="../img/Katz.svg" alt="">
+                <img src="../img/Zoom.svg" alt="">
+                <img src="../img/Lincoln.svg" alt="">
+                <img src="../img/McLaren.svg" alt="">
+
+                <img src="../img/Crunch.svg" alt="">
+                <img src="../img/Cirque.svg" alt="">
+                <img src="../img/Hydro.svg" alt="">
+                <img src="../img/Katz.svg" alt="">
+                <img src="../img/Zoom.svg" alt="">
+                <img src="../img/Lincoln.svg" alt="">
+                <img src="../img/McLaren.svg" alt="">
+            </div>
+        </div>
+
+        <!--  div for btn to pause the animation or play -->
+        <div
+            class="text-sm cursor-pointer pause relative flex items-center justify-center mx-auto w-fit p-3 rounded-xl text-center border-2 border-black">
+            <i class="pBtn invisible hiddin absolute  fa-solid fa-play"></i>
+            <i class="pBtn invisible hiddin  active  absolute  fa-solid fa-pause"></i>
+        </div>
+    </section>
+    <!-- End hero section  -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-2 = find -->
+
+    <section class="section2 mt-45 mb-50 relative w-full">
+        <div class="find relative w-full text-center">
+            <p class="px-4 py-1 mb-5 font-normal bg-[#f7f5f2] w-fit mx-auto rounded-2xl  text-gray-500 text-[18px]"><i
+                    class="text-sm mr-1 fa-solid fa-magnifying-glass"></i>
+                Find</p>
+            <h1 class="text-3xl font-semibold mb-5">Find it fast, every time</h1>
+            <p class="mb-5 text-[#6f6f6f] w-[80%] sm:w-[60%] mx-auto text-xl ">Get to the right file, fact, or message
+                when you
+                need it,
+                so
+                you
+                spend less
+                time
+                searching and more time
+                working.</p>
+            <button class="transition ease-in duration-300 group 
+                  px-5 py-3 cursor-pointer hover:bg-gray-200 my-5 
+                  text-black text-xl font-semibold border-black border-2 rounded-xl ">
+                Try Dropbox free
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-5 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="galary w-[70%] relative mx-auto mt-25">
+            <img class="hidden lg:block w-[50%]" src="../img/customerartifact-fashion-photo-1080x1080.webp" alt="">
+            <video class="relative lg:absolute lg:w-[60%] lg:top-0 lg:left-[30%]" muted autoplay loop
+                src="../videos/vid1.webm"></video>
+        </div>
+    </section>
+    <!-- End section-2  -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-3  orgaization -->
+
+    <section class="section2 mt-50 mb-50 relative w-full">
+        <div class="find relative w-full text-center">
+            <p class="px-4 py-1 mb-5 font-normal bg-[#f7f5f2] w-fit mx-auto rounded-2xl  text-gray-500 text-[18px]"><i
+                    class="text-sm mr-1 fa-solid fa-shapes"></i>
+                Organize</p>
+            <h1 class="w-[60%] mx-auto text-3xl font-semibold mb-5">Everything in order, everyone aligned</h1>
+            <p class="mb-5 text-[#6f6f6f]  w-[70%] sm:w-[60%] mx-auto text-[17px] sm:text-xl ">Keep every version
+                current and easy to manage. With synced team folders and previews for 175+ file types, your content
+                stays organized and accessible.</p>
+            <button class="transition ease-in duration-300 group 
+                  px-5 py-3 cursor-pointer hover:bg-gray-200 sm:my-5 my-1 
+                  text-black  sm:text-xl font-semibold border-black border-2 rounded-xl ">
+                Learn more
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-5 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i></button>
+
+            <button class="transition mx-auto block lg:inline ease-in duration-300 group 
+                   py-3 cursor-pointer lg:pl-15 sm:my-5 my-1 
+                  text-black sm:text-xl font-semibold ">
+                <span class="border-black border-b-1">Try Dropbox free</span>
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="galary w-[70%] relative mx-auto mt-25">
+            <img class="hidden left-[50%] lg:block relative w-[50%]" src="../img/fomulla-1.webp" alt="">
+            <video class="relative lg:absolute lg:w-[60%] lg:top-0 lg:left-[10%]" muted autoplay loop
+                src="../videos/fomulla-one.webm"></video>
+        </div>
+    </section>
+    <!-- end section-3  -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-4 share -->
+    <section class="section2 mt-50 mb-50 relative w-full">
+        <div class="find relative w-full text-center">
+            <p class="px-4 py-1 mb-5 font-normal bg-[#f7f5f2] w-fit mx-auto rounded-2xl  text-gray-500 text-[18px]"><i
+                    class="text-sm mr-1 fa-solid fa-arrow-up-from-bracket"></i>
+                Share</p>
+            <h1 class="w-[60%] mx-auto text-3xl font-semibold mb-5">Send it safely, share it fast</h1>
+            <p class="mb-5 text-[#6f6f6f]  w-[70%] sm:w-[60%] mx-auto text-[17px] sm:text-xl ">Share work
+                instantly and securely with
+                real-time syncing and large file transfers, so teams stay connected and collaboration stays seamless.
+            </p>
+            <button class="transition ease-in duration-300 group 
+                  px-5 py-3 cursor-pointer hover:bg-gray-200 sm:my-5 my-1 
+                  text-black  sm:text-xl font-semibold border-black border-2 rounded-xl ">
+                Learn more
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-5 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i></button>
+
+            <button class="transition mx-auto block lg:inline ease-in duration-300 group 
+                   py-3 cursor-pointer lg:pl-15 sm:my-5 my-1 
+                  text-black sm:text-xl font-semibold ">
+                <span class="border-black border-b-1">Try Dropbox free</span>
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="galary w-[70%] relative mx-auto mt-25">
+            <img class="hidden lg:block w-[50%]" src="../img/customerartifact-share-photo-1080x1080.webp" alt="">
+            <video class="relative lg:absolute lg:w-[60%] lg:top-0 lg:left-[30%]" muted autoplay loop
+                src="../videos/dropbox-home-share-ui-transparent-1024x640-v07.webm"></video>
+        </div>
+    </section>
+    <!-- end share section -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-5 security  -->
+    <section class="section5 w-full lg:w-[93%] relative lg:rounded-3xl mx-auto bg-[#1e1e1e] pt-30">
+        <div class="secure relative w-full  text-center">
+
+            <i class="text-5xl text-white mb-10 fa-solid fa-lock"></i>
+            <h1 class="w-[80%] lg:w-[60%] text-white mx-auto text-3xl font-semibold mb-5">Security never comes second
+            </h1>
+            <p class="mb-5 text-[#6f6f6f]  w-[70%] sm:w-[65%] mx-auto text-[17px] sm:text-xl ">From industry-leading
+                encryption and tamper-proof documents to version history and recovery, Dropbox keeps your intellectual
+                property safe and never sells your data.
+            </p>
+            <button class="transition ease-in duration-300 group 
+                  px-5 py-3 cursor-pointer hover:bg-gray-700 sm:my-5 my-1 
+                  text-white  sm:text-xl font-semibold border-white border-2 rounded-xl ">
+                Try Dropbox free
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-5 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i></button>
+
+            <button class="transition mx-auto block lg:inline ease-in duration-300 group 
+                   py-3 cursor-pointer lg:pl-15 sm:my-5 my-1 
+                  text-white sm:text-xl font-semibold ">
+                <span class="border-white border-b-1">Learn more</span>
+                <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="galary w-[85%] lg:w-[70%] relative pb-7 mx-auto mt-25">
+            <img class="hidden left-[16%] relative z-5 lg:block w-[40%]" src="../img/security-left-3.webp" alt="">
+
+            <img class="relative lg:absolute lg:w-[60%] z-6 lg:top-0 lg:left-[40%]"
+                src="../img/productvisual-security-pv-1248x1010.webp" alt=""></img>
+
+            <img class="relative lg:block hidden lg:absolute lg:w-[20%] z-3 lg:top-20 lg:left-[0%]"
+                src="../img/security-left-2.webp" alt=""></img>
+
+
+            <img class="relative lg:block hidden lg:absolute lg:w-[23%] z-1 lg:top-55 lg:left-[-2%]"
+                src="../img/security-left-1.webp" alt=""></img>
+
+        </div>
+
+
+        <div class="testimonial overflow-x-auto transition ease-in duration-300 ml-3  sm:pl-25 pb-5 flex   gap-5 mt-35">
+            <div class="box md:flex  p-2 rounded-xl shrink-0 bg-black cursor-pointer w-[315px] md:w-[800px]">
+                <div class="left w-[300px] md:w-[500px] relative">
+                    <img class="relative rounded-xl" src="../img/BrianThumb.webp" alt="">
+                    <i class="absolute bottom-3 left-3 bg-white p-2 rounded-xl text-[13px] fa-solid fa-play"></i>
+                </div>
+                <div class="right ml-8 w-full relative pt-2 flex flex-col justify-between">
+                    <p class=" font-bold text-[#cd2f7b] mt-8 md:mt-0 mb-5">Testimonial</p>
+                    <h1 class="text-xl md:text-2xl text-white font-semibold  w-[85%] mb-3">"The security of
+                        knowing
+                        our information is safe."</h1>
+                    <p class=" font-semibold mb-20 w-[85%]  md:w-[95%] text-gray-400">Customer Bryan Chandler reveals
+                        how his team
+                        uses
+                        Dropbox to organize and share files securely</p>
+                    <a class="w-fit mt-auto lg:mb-3 text-xl font-semibold border-b-1 text-white border-white"
+                        href="#">Watch
+                        testimonial</a>
+                </div>
+            </div>
+
+            <div class="box md:flex  p-2 rounded-xl shrink-0 bg-black cursor-pointer w-[315px] md:w-[800px]">
+                <div class="left w-[300px] md:w-[500px] relative">
+                    <img class="relative rounded-xl" src="../img/JustinThumb.png" alt="">
+                    <i class="absolute bottom-3 left-3 bg-white p-2 rounded-xl text-[13px] fa-solid fa-play"></i>
+                </div>
+                <div class="right ml-8 w-full relative pt-2 flex flex-col justify-between">
+                    <p class=" font-bold text-[#cd2f7b] mt-8 md:mt-0 mb-5">Testimonial</p>
+                    <h1 class="text-xl md:text-2xl text-white font-semibold  w-[85%] mb-3">"Seriously impressive
+                        security
+                        features"</h1>
+                    <p class="font-semibold w-[85%] mb-13  md:w-[95%] text-gray-400">Tech influencer Justin Tse
+                        discusses why he
+                        trusts
+                        Testimonial
+                        Dropbox to keep his content safe</p>
+                    <a class="w-fit lg:mb-3  mt-auto text-xl font-semibold border-b-1 text-white border-white"
+                        href="#">Watch
+                        testimonial</a>
+                </div>
+            </div>
+
+            <div class="box md:flex  p-2 rounded-xl shrink-0 bg-black cursor-pointer w-[315px] md:w-[800px] md:mr-15">
+                <div class="left w-[300px] md:w-[500px] relative">
+                    <img class="relative rounded-xl" src="../img/p3.webp" alt="">
+                    <i class="absolute bottom-3 left-3 bg-white p-2 rounded-xl text-[13px] fa-solid fa-play"></i>
+                </div>
+                <div class="right ml-8 w-full relative pt-2 flex flex-col justify-between">
+                    <p class=" font-bold text-[#cd2f7b] mt-8 md:mt-0 mb-5">Webinar</p>
+                    <h1 class="text-xl md:text-2xl text-white font-semibold  w-[85%] mb-3">"How do you enhance
+                        security and
+                        keep productivity reasonable?"</h1>
+                    <p class=" font-semibold w-[85%] mb-12 md:w-[95%] text-gray-400">Your company's sharing content
+                        with
+                        collaborators all
+                        over the world. Are you in control?</p>
+                    <a class="w-fit mt-auto  text-xl lg:mb-3 font-semibold border-b-1 text-white border-white"
+                        href="#">Watch
+                        webinar</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- // add the btn to scrol the cards -->
+        <div class="change flex text-white justify-end gap-5 text-2xl w-[95%] relative pb-20    ">
+            <i
+                class="leftMove transition ease-in duration-200 px-2 py-1 border border-white hover:bg-gray-500/50 rounded-[50%] cursor-pointer fa-solid fa-angle-left"></i>
+            <i
+                class="rightMove transition ease-in duration-200 px-2 py-1 border border-white hover:bg-gray-500/50 rounded-[50%] cursor-pointer fa-solid fa-angle-right"></i>
+        </div>
+        <!-- videos will appear -->
+        <div class="vid1 transition ease-in duration-300  
+            inset-0 w-full  h-full fixed z-50
+            bg-black/95 opacity-0  pointer-events-none 
+            flex justify-center items-center gap-5  videos">
+
+            <video class=" w-[80%] rounded-2xl " autoplay muted loop src="../videos/916149418.mp4"></video>
+            <button
+                class="close cursor-pointer absolute top-5 right-5 text-white hover:bg-red-700 transition ease-in duration-300 border-2 border-white px-3 py-1 rounded-[50%] text-xl">X</button>
+
+        </div>
+
+        <div class="vid2 transition ease-in duration-300  
+            inset-0 w-full  h-full fixed z-50
+            bg-black/95 opacity-0  pointer-events-none 
+            flex justify-center items-center gap-5  videos">
+
+            <video class="w-[80%] rounded-2xl" autoplay muted loop src="../videos/941651728.mp4"></video>
+            <button
+                class="close cursor-pointer absolute top-5 right-5 text-white hover:bg-red-700 transition ease-in duration-300 border-2 border-white px-3 py-1 rounded-[50%] text-xl">X</button>
+        </div>
+    </section>
+    <!-- end security -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-6 Empowers -->
+    <section class="section6 mt-30 text-center mb-20">
+        <h1 class="mx-auto text-5xl font-semibold w-full">Dropbox empowers across industries</h1>
+        <div class="grids w-[90%] mt-20 grid xl:grid-cols-2 xl:grid-rows-3 gap-7 mx-auto">
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left w-[50%] hidden md:block relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/construction-hero@2x.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Construction</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">With Dropbox for teams,
+                        you can store, access,
+                        preview, edit, and transfer
+                        CAD, BIM, PDF, and visual
+                        content files from
+                        anywhere.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left hidden md:block w-[50%] relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/The-Luupe-Genya-Oneall.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Media</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">Create a flexible media workspace
+                        that connects your teams, content, and
+                        tools together.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left hidden md:block w-[50%] relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/GettyImages-1139238082.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Technology</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">Product ideation to development,
+                        streamline
+                        technology workflows so you can focus on
+                        turning great ideas into products people love.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left hidden md:block w-[50%] relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/etgcNMmB.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Professional services</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">Make clients happier with easy
+                        collaboration,
+                        boosted productivity, and one organized place
+                        to get things done.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left hidden md:block w-[50%] relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/GettyImages-900253108.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Manufacturing</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">Design and engineering teams easily
+                        collaborate, managing complex reviews and
+                        sharing large files seamlessly.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+            <div class="box md:flex   rounded-xl shrink-0 bg-[var(--light-bg)]  cursor-pointer w-[100%]">
+                <div class="left hidden md:block w-[50%] relative overflow-hiddene">
+                    <img class="relative w-full h-full object-cover rounded-bl-xl rounded-tl-xl"
+                        src="../img/education-hero@2x.webp" alt="">
+                </div>
+                <div class="right w-full relative pl-5 flex flex-col justify-start pt-5 ">
+                    <p class=" font-bold text-black mt-8 md:mt-0 mb-5 text-2xl text-start ">Education</p>
+                    <p class="text-xl  text-gray-500 font-normal   text-start mb-10">Power student learning, faculty
+                        research, and
+                        staff operations on Dropbox Education's secure
+                        cloud collaboration platform.</p>
+
+                    <button class="transition  ease-in duration-300 group text-start 
+                    cursor-pointer  mb-7 
+                  text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Learn more</span>
+                        <i class="transition ease-in duration-300 
+                    group-hover:translate-x-1  ml-3 font-light
+                     text-[15px] pr-1  fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- =============================================================== -->
+
+        </div>
+    </section>
+    <!-- End section 6 -->
+    <!-- ==================================================================================================================== -->
+    <!-- section-7 Discover -->
+    <section class="section7 mt-30 py-20 text-center  bg-[var(--light-bg)]">
+        <h1 class="mx-auto text-3xl  md:text-5xl w-[60%] sm:w-full">Discover, learn, thrive with Dropbox</h1>
+
+        <div class="Grid w-[90%]   mt-20 grid md:grid-cols-2 xl:grid-cols-3  gap-7 mx-auto">
+            <!-- ========================================================================== -->
+            <div class="box flex rounded-2xl flex-col bg-white ">
+                <div class="top h-[250px]">
+                    <img class="relative w-full h-full object-cover  rounded-tl-xl rounded-tr-xl" src="../img/blue.png"
+                        alt="">
+                </div>
+                <div class="bottom flex flex-col h-full pl-5 pr-10">
+                    <h1 class="my-3 text-start  text-[var(--light-text)] font-bold">Article</h1>
+                    <p class="text-start font-semibold mb-3 text-sm sm:text-xl">Study: Here's how many hours we
+                        lose to distraction-and how to get
+                        our focus back</p>
+                    <p class="text-start font-normal sm:text-xl mb-5 text-[var(--light-text2)]"> For our study,
+                        Economist
+                        Impact
+                        included
+                        knowledge workers globally-and found
+                        that, no matter where people work, there's
+                        a significant cost to lost focus around
+                        the world.</p>
+                    <button
+                        class=" text-start relative cursor-pointer mb-7 mt-auto w-full text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Read article</span>
+                    </button>
+                </div>
+            </div>
+            <!-- ========================================================================== -->
+
+            <div class="box flex rounded-2xl flex-col bg-white ">
+                <div class="top h-[250px]">
+                    <img class="relative w-full h-full object-cover  rounded-tl-xl rounded-tr-xl"
+                        src="../img/formul-1.png" alt="">
+                </div>
+                <div class="bottom flex flex-col h-full pl-5 pr-10">
+                    <h1 class="my-3 text-start text-[var(--light-text)] font-semibold sm:font-bold">Article</h1>
+                    <p class="text-start font-semibold mb-3 text-sm sm:text-xl">Dropbox teams up with McLaren
+                        Racing as an Official Technology
+                        Partner of McLaren Formula 1 Team</p>
+                    <p class="text-start sm:text-xl font-normal   text-[var(--light-text2)]"> Dropbox brings
+                        simplified
+                        sharing,
+                        collaboration, and organization to the
+                        McLaren Formula 1 Team.</p>
+                    <button
+                        class=" text-start relative cursor-pointer mb-7 mt-auto  w-full text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Read article</span>
+                    </button>
+                </div>
+            </div>
+            <!-- ========================================================================== -->
+
+            <div class="box flex rounded-2xl flex-col bg-white ">
+                <div class="top h-[250px]">
+                    <img class="relative w-full h-full object-cover  rounded-tl-xl rounded-tr-xl"
+                        src="../img/share.webp" alt="">
+                </div>
+                <div class="bottom flex flex-col h-full pl-5 pr-10 ">
+                    <h1 class="my-3 text-start  text-[var(--light-text)] font-bold">Article</h1>
+                    <p class="text-start font-semibold mb-3 text-sm sm:text-xl">The best way to share photos with
+                        family and friends</p>
+                    <p class="text-start font-normal sm:text-xl text-[var(--light-text2)]"> Don't lose precious photos.
+                        Save them and
+                        share them with loved ones-for free. Here's
+                        an easy-to-follow guide to sharing and
+                        storing photos with Dropbox.</p>
+                    <button
+                        class=" text-start relative cursor-pointer top-auto mb-7 mt-auto  w-full text-black sm:text-xl font-semibold ">
+                        <span class="border-black border-b-1">Read article</span>
+                    </button>
+                </div>
+            </div>
+            <!-- ========================================================================== -->
+
+        </div>
+    </section>
+    <!-- end section 7 -->
+    <!-- ==================================================================================================================== -->
+    <!-- footer section -->
+    <footer class=" w-full bg-black pt-15 px-5 sm:px-10 ">
+        <div class="grid text-white  grid-cols-2 gap-5  lg:grid-cols-3  xl:grid-cols-6 ">
+            <div class="dropbox">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Dropbox</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Desktop app</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Mobile app</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Integration</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Features</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Solutions</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Security</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Early access</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Templates</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Free tools</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Products</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Plus</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Professional</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Business</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Enterprise</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Dash</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">DocSend</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Dropbox Sign</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Reclaim.ai</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Dropbox Fax</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Plans</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Product updatres</a></li>
+                </ul>
+
+            </div>
+            <div class="features">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Features</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Send large files </a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Send long videos</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Cloud photo storage</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Secure file transfer</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Cloud backup</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Edit PDFs</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">electronic signatures</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Convert to PDF</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Support</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Help center</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Contact us</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Privacy & terms</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Cookie policy</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Cookies & CCPA preferences</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">AI principles</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Sitemap</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Learning resources</a></li>
+                </ul>
+            </div>
+            <div class="resourse ">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Resourses</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Blog</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Events</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Customers stories</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Resources library</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Developers</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Community forums</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Referrals</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Reseller psrtners</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Integration partners</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Find a partner</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <h1 class="text-xl font-bold sm:text-2xl sm:font-semibold mb-6">Company</h1>
+                <ul class="mb-10 lg:mb-0 last:mb-0">
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">About us</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Jobs</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Investor</a></li>
+                    <li class="mb-4"><a class="hover:border-b border-white" href="#">Corporate responsibility</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js.js"></script>
+</body>
+
+</html>
