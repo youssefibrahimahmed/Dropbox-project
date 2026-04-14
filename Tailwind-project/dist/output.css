@@ -628,12 +628,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/90 {
-    background-color: color-mix(in srgb, #fff 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
-    }
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -871,14 +865,6 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .hover\:border {
-    &:hover {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
-  }
   .hover\:border-b {
     &:hover {
       @media (hover: hover) {
@@ -979,14 +965,6 @@
       width: 100%;
     }
   }
-  .sm\:bg-red-950\/90 {
-    @media (width >= 40rem) {
-      background-color: color-mix(in srgb, oklch(25.8% 0.092 26.042) 90%, transparent);
-      @supports (color: color-mix(in lab, red, red)) {
-        background-color: color-mix(in oklab, var(--color-red-950) 90%, transparent);
-      }
-    }
-  }
   .sm\:bg-white\/90 {
     @media (width >= 40rem) {
       background-color: color-mix(in srgb, #fff 90%, transparent);
@@ -1065,11 +1043,6 @@
       display: flex;
     }
   }
-  .md\:grid {
-    @media (width >= 48rem) {
-      display: grid;
-    }
-  }
   .md\:w-\[95\%\] {
     @media (width >= 48rem) {
       width: 95%;
@@ -1088,11 +1061,6 @@
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-rows-3 {
-    @media (width >= 48rem) {
-      grid-template-rows: repeat(3, minmax(0, 1fr));
     }
   }
   .md\:text-2xl {
@@ -1172,11 +1140,6 @@
       display: flex;
     }
   }
-  .lg\:grid {
-    @media (width >= 64rem) {
-      display: grid;
-    }
-  }
   .lg\:inline {
     @media (width >= 64rem) {
       display: inline;
@@ -1212,19 +1175,9 @@
       width: 93%;
     }
   }
-  .lg\:grid-cols-2 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-rows-2 {
-    @media (width >= 64rem) {
-      grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:rounded-3xl {
@@ -1270,11 +1223,6 @@
   .xl\:grid-cols-6 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
-  .xl\:grid-rows-1 {
-    @media (width >= 80rem) {
-      grid-template-rows: repeat(1, minmax(0, 1fr));
     }
   }
   .xl\:grid-rows-3 {
